@@ -8,7 +8,7 @@ Unofficial Windows companion for God of War Ragnarök, with a desktop atlas and 
 
 1. Extract `GoWRCollector-Portable.zip` into a writable folder.
 2. Run `GoWRCollector.exe`. No installer is required.
-3. For the phone view, connect both devices to the same trusted LAN/Wi-Fi and scan the QR shown by the app. Pairing changes when Collector restarts.
+3. For the phone view, connect both devices to the same trusted LAN/Wi-Fi and scan the QR shown by the app. QR links are valid for 30 days by default and survive Collector restarts. Set 1–365 days or revoke old links on the PHONE tab. Collector must be running on the same LAN address.
 4. For Steam, use the app's Steam Overlay link in Steam's browser.
 
 Settings and manual marker notes are stored in the generated `userdata` folder. Keep this folder when updating.
