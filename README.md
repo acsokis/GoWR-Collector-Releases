@@ -1,25 +1,37 @@
 # GoWR Collector Assistant
 
-Unofficial Windows companion for God of War Ragnarök, with a desktop atlas and paired phone/Steam browser view.
+Find your next chest, Raven, artifact or lore discovery in God of War Ragnarök. Browse the atlas on your PC, keep it beside you on your phone, or open it in Steam's browser.
 
-**[Download the latest release](https://github.com/acsokis/GoWR-Collector-Releases/releases/latest)**
+**[Download the latest portable release](https://github.com/acsokis/GoWR-Collector-Releases/releases/latest)** · Windows 10/11, 64-bit · No installer
 
-## Run
+## Start exploring
 
-1. Extract `GoWRCollector-Portable.zip` into a writable folder.
-2. Run `GoWRCollector.exe`. No installer is required.
-3. For the phone view, connect both devices to the same trusted LAN/Wi-Fi and scan the QR shown by the app. QR links are valid for 30 days by default and survive Collector restarts. Set 1–365 days or revoke old links on the PHONE tab. Collector must be running on the same LAN address.
-4. For Steam, use the app's Steam Overlay link in Steam's browser.
+1. Extract `GoWRCollector-Portable.zip` into a folder you can write to, then run `GoWRCollector.exe`.
+2. Open COLLECTOR and choose a realm, region and collectible type. Use the search and filters to narrow your hunt.
+3. Click or tap a marker to add it to your targets. Tap it again to remove it. You can track several discoveries together.
+4. Enable the game HUD to see numbered, color-coded icons. The nearest target sits in the middle, with other nearby targets beside it. A small arrow inside each ring points toward the target; the red distance arc shrinks as you approach and empties at five camera-distance world units.
 
-Settings and manual marker notes are stored in the generated `userdata` folder. Keep this folder when updating.
+The HUD uses a read-only camera adapter for the supported game build. It appears while the game is in the foreground. Distance is measured from the camera, so it does not necessarily reach zero beside a chest.
 
-## Current limitations
+## Phone and Steam
 
-- Looted/unlooted chest detection is **not automatic**. Collected and locked states are manual annotations shared across desktop, phone and Steam.
-- Maps are schematic source-position atlases, not verified terrain or walkable routes.
-- The supported-build camera adapter is read-only; independent character/Atreus position and all marker alignments are not verified.
-- Translations are incomplete and may retain source text.
+Connect your phone and PC to the same trusted Wi-Fi or LAN. Open PHONE, start the companion and scan the QR code. For Steam, open the app's Steam Overlay link in Steam's browser. The browser view is a companion page, not an injected Steam plugin.
 
-The private development source is maintained separately. This public repository contains release documentation and download assets only. Its automatically generated source archives contain this documentation, not the application source.
+QR links last 30 days by default and survive Collector restarts. You can choose 1–365 days or revoke old links on the PHONE tab. Collector must stay running at the same LAN address. Web pages now reload when the app's web interface changes; refresh older open tabs once after this update.
 
-This application is unofficial. Game rights belong to their respective owners. The QR generator is Project Nayuki's MIT-licensed QR Code generator; its attribution and license are available in the application About view.
+## Updating
+
+Close Collector, replace the portable app files, and keep your `userdata` folder. That folder holds settings, pairing and any existing manual marker notes. ReShade and game files are not replaced by this companion.
+
+## What to expect
+
+- Automatic opened/looted chest detection is not available. Unknown means unknown; an empty distance arc does not mean a chest was looted. Existing manual notes are only personal annotations.
+- The maps are drawn exploration atlases based on extracted positions. They are not the game's terrain maps or verified walking routes, and some collectibles may still be missing.
+- Independent character and Atreus tracking, story/ability access checks, and complete translation coverage are still unfinished.
+- The HUD's fixed target row replaces the earlier experimental world-projected circles. Final gameplay and phone-layout testing is ongoing.
+
+## About
+
+An unofficial community companion. Game rights belong to their respective owners. QR generation uses Project Nayuki's MIT-licensed QR Code generator; attribution and license are included in the application.
+
+Development source stays in a separate private repository. This public repository contains player documentation and downloadable releases; GitHub's source archives here contain documentation only.
